@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+* {
+  box-sizing: border-box;
+}
+::selection{
+  background: #b4b4bc;
+  color: #222;
+}
+
+br{
+  font-size: 0;
+}
+body{
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: #b4b4bc;
+  color: white;
+}
+.chat-box{
+  width: 400px;
+  height: 500px;
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px black solid;
+}
+  
+  
+section{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100% - 40px - 40px);
+  padding: 12px;
+}
+div{
+  margin: 12px 0;
+}
+span{
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 1px 0;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+      
+div.not-me{
+  text-align: left;
+}
+  div.not-me span{   
+    background-color: #2294fb;
+    border-radius: 4px 16px 16px 4px;
+  }
+  div.not-me span:first-of-type{
+    border-top-left-radius: 16px;
+  }
+  div.not-me span:last-of-type{
+    border-bottom-left-radius: 16px;
+  }    
+div.me{
+  text-align: right;
+}
+  div.me span{  
+    background-color: #2294fb;
+    border-radius: 16px 4px 4px 16px;
+  }
+  div.me span:first-of-type{
+    border-top-right-radius: 16px;
+  }
+  div.me span:last-of-type{
+    border-bottom-right-radius: 16px;
+  }
+
+footer {
+    display: flex;
+    align-items: center;
+}
+footer input{
+  font-family: "Karla", sans-serif;
+  outline: 0;
+  padding: 0 12px;
+  height: 60px;
+  width: 100%;
+  font-size: 1em;
+  color: black;
+  margin: 0;
+  flex: 1; 
+  margin-left: 5px;
+  border: 1px solid black;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #eee;
+}
+
+#send-button {
+  margin-left: 0px; 
+  margin-right: 5px; 
+  padding: 11px 16px;
+  background-color: #2294fb;
+  color: white;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+  background-color: #0e70c5;  
+}
